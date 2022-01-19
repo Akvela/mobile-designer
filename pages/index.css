@@ -4,7 +4,7 @@
   max-width: 1440px;
   min-width: 320px;
   font-family: Inter, Arial, sans-serif;
-  display: flex;
+  display: block;
   margin: 0 auto;
 }
 .page__header {
@@ -15,10 +15,9 @@
   background-color: #222222;
   border-radius: 20px;
   min-height: 640px;
-  width: 100%;
+  width: calc(100% - 20px);
   max-width: 1420px;
   display: flex;
-  position: relative;
 }
 .header__container {
   padding: 30px 82px 0 160px;
@@ -80,4 +79,110 @@
   color: #222222;
   align-items: center;
   margin: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+.header__button:hover {
+  cursor: pointer;
+  opacity: 0.93;
+}
+
+.cards {
+  padding: 0 60px 60px 60px;
+  display: flex;
+  max-width: 1100px;
+  gap: 20px;
+}
+.cards__item {
+  border-radius: 20px;
+  background-color: #F8F8F8;
+  max-width: 540px;
+  min-height: 308px;
+  display: block;
+  margin: 0;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.cards__subtitle {
+  margin: 0;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #111111;
+  opacity: 0.6;
+  display: block;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.cards__title {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: normal;
+  color: #111111;
+  line-height: 38px;
+  padding-bottom: 40px;
+}
+.cards__title_one-stroke {
+  padding-bottom: 78px;
+}
+.cards__text {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #111111;
+  opacity: 0.6;
+  line-height: 24px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery {
+  display: block;
+  width: 100%;
+  padding-bottom: 120px;
+  margin: 0;
+}
+.gallery__photos {
+  display: grid;
+  max-width: 1100px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  min-height: 709px;
+  gap: 25px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+}
+.gallery__photo {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  box-shadow: 0px 4px 80px 0px #00000040;
+  border-radius: 66px;
+}
+
+.title {
+  display: block;
+  max-width: 1103px;
+  width: 100%;
+  min-height: 204px;
+  font-size: 60px;
+  font-weight: 600;
+  font-style: normal;
+  color: #111111;
+  line-height: 68px;
+  margin: 0 auto;
+  padding: 60px 0 120px 0;
 }/*# sourceMappingURL=index.css.map */
