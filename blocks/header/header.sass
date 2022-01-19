@@ -2,10 +2,9 @@
     background-color: $primary-color
     border-radius: 20px
     min-height: 640px
-    width: 100%
+    width: calc(100% - 20px)
     max-width: 1420px
     display: flex
-    position: relative
 
 
     &__container
@@ -73,3 +72,10 @@
         color: #222222
         align-items: center
         margin: 0
+        opacity: 1
+        transition: opacity .3s ease-in
+
+
+        &:hover
+            cursor: pointer
+            opacity: .93
