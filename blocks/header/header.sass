@@ -5,12 +5,30 @@
     width: calc(100% - 20px)
     max-width: 1420px
     display: flex
+    position: relative
+
+    @media screen and (max-width: $tablet-size)
+        min-height: 602px
+
+    @media screen and (max-width: $mobile-size)
+        border-radius: 10px
 
 
     &__container
         padding: 30px 82px 0 160px
         max-width: 650px
         display: block
+        height: 100%
+
+        @media screen and (max-width: $tablet-size)
+            padding: 30px 43px 0 50px 
+            min-height: 192px
+            max-width: 360px
+
+        @media screen and (max-width: $mobile-size)
+            padding: 20px
+            min-height: 522px
+            max-width: calc(100% - 40px)
 
 
     &__logo
@@ -31,6 +49,16 @@
         width: 100%
         margin: 0
         padding: 60px 0 28px 0
+
+        @media screen and (max-width: $tablet-size)
+            font-size: 33px
+            line-height: 37px
+            padding: 50px 0 20px 0
+
+        @media screen and (max-width: $mobile-size)
+            font-size: 24px
+            line-height: 29px
+            padding-bottom: 14px
         
 
     &__image
@@ -44,6 +72,20 @@
         background-position: center
         box-shadow: 0px 4px 80px 0px #00000040
         border-radius: 47px
+        background-repeat: no-repeat
+
+        @media screen and (max-width: $tablet-size)
+            max-width: 250px
+            height: 502px
+            top: 120px
+            border-radius: 39px
+
+        @media screen and (max-width: $mobile-size)
+            max-width: 260px
+            height: 522px
+            position: absolute
+            top: 262px
+            left: 20px
 
 
     &__text
@@ -57,6 +99,19 @@
         padding-bottom: 108px
         max-width: 450px
         margin: 0
+
+        @media screen and (max-width: $tablet-size)
+            font-size: 15px
+            line-height: 20px
+            padding-bottom: 250px
+            max-width: 360px
+
+        @media screen and (max-width: $mobile-size)
+            font-size: 12px
+            line-height: 15px
+            padding-bottom: 50px
+            max-width: 100%
+            margin: 0 auto
 
 
     &__button
@@ -74,6 +129,15 @@
         margin: 0
         opacity: 1
         transition: opacity .3s ease-in
+
+        @media screen and (max-width: $tablet-size)
+            height: 48px
+            font-size: 14px
+
+        @media screen and (max-width: $mobile-size)
+            margin: 572px auto 0 auto
+            width: 260px
+            height: 44px
 
 
         &:hover
