@@ -6,4 +6,16 @@
     @include large-text
     line-height: 68px
     margin: 0 auto
-    padding: 60px 0 120px 0
+    padding: 120px 0
+
+    @media screen and (max-width: 1130px)
+        font-size: 33px
+        line-height: 37px
+        max-width: 648px
+        padding: 70px 0
+        min-height: 111px
+
+    @media screen and (max-width: $mobile-size)
+        font-size: 26px
+        line-height: 31px
+        max-width: calc(100% - 60px)
