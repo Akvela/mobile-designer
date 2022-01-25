@@ -9,6 +9,7 @@
     box-sizing: border-box
 
     @media screen and (max-width: $tablet-size)
+        max-width: calc(100% - 60px)
         min-height: 611px
 
     @media screen and (max-width: $mobile-size)
@@ -146,14 +147,16 @@
             &::-ms-input-placeholder
                 font-size: 12px
 
-        &_textarea
-            max-width: 980px
-            width: 100%
-            min-height: 130px
-            resize: none
+        &_type
+        
+            &_textarea
+                max-width: 980px
+                width: 100%
+                min-height: 130px
+                resize: none
 
-            @media screen and (max-width: $tablet-size)
-                max-width: 470px
+                @media screen and (max-width: $tablet-size)
+                    max-width: 470px
 
                 
     &__button
@@ -161,7 +164,9 @@
         width: 194px
         height: 54px
         border-radius: 8px
+        border: none
         background-color: $primary-color
+        background-repeat: no-repeat
         margin: 30px 60px 60px 846px
         color: #FFFFFF
         padding: 15px 30px
@@ -171,6 +176,7 @@
         font-weight: 600
         opacity: 1
         transition: opacity .3s ease-in
+        text-decoration: none
 
         @media screen and (max-width: 1165px)
             margin: 30px 60px 60px 700px

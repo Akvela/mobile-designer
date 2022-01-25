@@ -169,6 +169,7 @@
   margin: 0;
   opacity: 1;
   transition: opacity 0.3s ease-in;
+  text-decoration: none;
 }
 @media screen and (max-width: 1000px) {
   .header__button {
@@ -204,8 +205,9 @@
 }
 @media screen and (max-width: 608px) {
   .cards {
-    flex-direction: column;
+    max-width: 320px;
     gap: 0;
+    flex-direction: column;
   }
 }
 .cards__item {
@@ -217,21 +219,27 @@
   margin: 0;
   padding: 40px;
   box-sizing: border-box;
+  margin-left: 20px;
+}
+.cards__item:first-child {
+  margin-left: 0;
 }
 @media screen and (max-width: 1000px) {
   .cards__item {
     max-width: 349px;
     min-height: 284px;
     padding: 30px;
+    margin-left: 10px;
+  }
+  .cards__item:first-child {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 608px) {
   .cards__item {
     max-width: 300px;
     padding: 20px;
-  }
-  .cards__item:nth-child(2n) {
-    display: none;
+    margin-left: 0;
   }
 }
 .cards__subtitle {
@@ -312,21 +320,26 @@
 }
 @media screen and (max-width: 608px) {
   .cards__swipe {
-    display: flex;
-    width: 12px;
-    height: 4px;
-    justify-content: space-between;
-    margin: 20px auto 0 auto;
+    display: block;
+    width: 16px;
+    margin: 10px auto 0 auto;
+    position: relative;
   }
 }
 .cards__dot {
   display: none;
   width: 4px;
   height: 4px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  margin: 0 2px;
+}
+.cards__dot_active {
+  background-color: #212121;
 }
 @media screen and (max-width: 608px) {
   .cards__dot {
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -341,17 +354,19 @@
   width: 100%;
   padding-bottom: 120px;
   margin: 0;
+  height: 709px;
 }
 @media screen and (max-width: 1000px) {
   .gallery {
     padding-bottom: 70px;
+    height: 461px;
   }
 }
 .gallery__photos {
   display: grid;
   max-width: 1100px;
   grid-template-columns: repeat(3, 1fr);
-  width: 100%;
+  width: calc(100% - 340px);
   min-height: 709px;
   gap: 25px;
   list-style-type: none;
@@ -361,6 +376,7 @@
 @media screen and (max-width: 1000px) {
   .gallery__photos {
     max-width: 708px;
+    width: calc(100% - 60px);
     gap: 15px;
     min-height: 461px;
   }
@@ -368,8 +384,9 @@
 @media screen and (max-width: 608px) {
   .gallery__photos {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0;
+    margin-left: 0;
   }
 }
 .gallery__photo {
@@ -378,7 +395,7 @@
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  box-shadow: 0px 4px 80px 0px #00000040;
+  box-shadow: 0 4px 80px 0 #00000040;
   border-radius: 52px;
 }
 @media screen and (max-width: 1000px) {
@@ -398,33 +415,10 @@
     max-width: 260px;
     margin: 0 auto;
   }
-  .gallery__item:nth-child(2n) {
-    display: none;
-  }
-  .gallery__item:nth-child(3n) {
-    display: none;
-  }
-}
-.gallery__swipe {
-  display: none;
 }
 @media screen and (max-width: 608px) {
   .gallery__swipe {
-    display: flex;
-    width: 12px;
-    height: 4px;
-    justify-content: space-between;
-    margin: 20px auto 0 auto;
-  }
-}
-.gallery__dot {
-  display: none;
-  width: 4px;
-  height: 4px;
-}
-@media screen and (max-width: 608px) {
-  .gallery__dot {
-    display: block;
+    margin: 7px auto 0 auto;
   }
 }
 
@@ -455,6 +449,7 @@
     font-size: 26px;
     line-height: 31px;
     max-width: calc(100% - 60px);
+    padding: 67px 0;
   }
 }
 
@@ -470,6 +465,7 @@
 }
 @media screen and (max-width: 1000px) {
   .form {
+    max-width: calc(100% - 60px);
     min-height: 611px;
   }
 }
@@ -659,14 +655,14 @@
     font-size: 12px;
   }
 }
-.form__input_textarea {
+.form__input_type_textarea {
   max-width: 980px;
   width: 100%;
   min-height: 130px;
   resize: none;
 }
 @media screen and (max-width: 1000px) {
-  .form__input_textarea {
+  .form__input_type_textarea {
     max-width: 470px;
   }
 }
@@ -675,7 +671,9 @@
   width: 194px;
   height: 54px;
   border-radius: 8px;
+  border: none;
   background-color: #222222;
+  background-repeat: no-repeat;
   margin: 30px 60px 60px 846px;
   color: #FFFFFF;
   padding: 15px 30px;
@@ -685,6 +683,7 @@
   font-weight: 600;
   opacity: 1;
   transition: opacity 0.3s ease-in;
+  text-decoration: none;
 }
 @media screen and (max-width: 1165px) {
   .form__button {
@@ -818,6 +817,7 @@
   margin: 0;
   opacity: 1;
   transition: opacity 0.3s ease-in;
+  text-decoration: none;
 }
 @media screen and (max-width: 1130px) {
   .footer__button {
