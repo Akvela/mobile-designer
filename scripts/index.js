@@ -11,8 +11,7 @@ let init = false;
 
 function swiperMode() {
   let mobile = window.matchMedia('(min-width: 320px) and (max-width: 608px)');
-  let tablet = window.matchMedia('(min-width: 608px) and (max-width: 1000px)');
-  let desktop = window.matchMedia('(min-width: 1000px)');
+  let desktop = window.matchMedia('(min-width: 609px) ');
 
   if(mobile.matches) {
     if (!init) {
@@ -30,14 +29,13 @@ function swiperMode() {
       });
     }   
   }
-    else if(tablet.matches && init == true) {
-      swiper.destroy();
-      init = false;
-  }
+   
 
-  else if(desktop.matches && init == true) {
-      swiper.destroy();
-      init = false;
+  else if(desktop.matches && init == true) { 
+    init = false;
+    document.querySelectorAll('.swiper').forEach(function(el) {
+      el.swiper.destroy();
+    });
   }
 } 
 

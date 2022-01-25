@@ -365,6 +365,7 @@
 @media screen and (max-width: 608px) {
   .gallery {
     height: 522px;
+    padding-bottom: 94px;
   }
 }
 .gallery__photos {
@@ -679,7 +680,7 @@
   border: none;
   background-color: #222222;
   background-repeat: no-repeat;
-  margin: 30px 60px 60px 846px;
+  margin: 30px 60px 60px 787px;
   color: #FFFFFF;
   padding: 15px 30px;
   box-sizing: border-box;
