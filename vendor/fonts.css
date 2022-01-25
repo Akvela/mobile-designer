@@ -15,8 +15,8 @@
 }
 
 @font-face {
-  src: url(./fonts/Inter-Semibold.woff2) format('woff2'),
-    url(./fonts/Inter-Semibold.woff) format('woff');
+  src: url(./fonts/Inter-SemiBold.woff2) format('woff2'),
+    url(./fonts/Inter-SemiBold.woff) format('woff');
   font-family: 'Inter';
   font-weight: 600;
   font-style: normal;
