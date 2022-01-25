@@ -2,9 +2,13 @@
 Учебный проект от Яндекс Практикума в рамках проектного месяца. В нем используются технологии:
 
 * Препроцессор SASS
+* Java Script
 * Grid Layout
 * Flex
+* Свайпер
 * Плавность переходов
 * Разметка и верстка форм
 
-Страница про мобильное приложение для плохих художников. [Ссылка](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings?node-id=6%3A898) на макет
+Страница про мобильное приложение для плохих художников. 
+### Посмотреть работу по [ссылке](https://akvela.github.io/mobile-designer/)
+#### [Ссылка](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings?node-id=6%3A898) на макет
