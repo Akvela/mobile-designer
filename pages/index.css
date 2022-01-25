@@ -362,6 +362,11 @@
     height: 461px;
   }
 }
+@media screen and (max-width: 608px) {
+  .gallery {
+    height: 522px;
+  }
+}
 .gallery__photos {
   display: grid;
   max-width: 1100px;
