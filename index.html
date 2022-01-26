@@ -1,37 +1,90 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-<<<<<<< HEAD
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Mobile designer</title>
 </head>
-<body>
-    
-=======
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css">
-    <title>Mobile designer</title>
-</head>
-<body class="body">
-  <div class="page">
-    <header class="header">
+<body class="page">
+  <header class="header page__header">
+    <div class="header__container">
       <div class="header__logo"></div>
-    </header>
-    <main class="content">
-      <section class="profile">
-
-      </section>
-      <section class="cards">
-
-      </section>
-      
-    </main>
-    <footer class="footer">
-
-    </footer>
-  </div>
->>>>>>> 94671c1 (adds index.html and fonts)
+      <h1 class="header__title">Не&nbsp;умеете рисовать? Не&nbsp;беда!</h1>
+      <p class="header__text">С помощью нашего приложения вы можете чиркануть каляку и получить шедевр.</p>
+      <a href="#" class="header__button js-disabled">Подробнее</a>
+    </div>
+    <div class="header__image"></div>
+  </header>
+  <main class="content">
+    <section class="cards swiper">
+      <div class="swiper-wrapper">
+        <article class="cards__item swiper-slide">
+          <p class="cards__subtitle">AI</p>
+          <h2 class="cards__title">Умный интелект приложения</h2>
+          <p class="cards__text">С помощью AI приложение анализирует картины мастеров и современных практиков рисования, 
+            и достраивает картину за вас.</p>
+        </article>
+        <article class="cards__item swiper-slide">
+          <p class="cards__subtitle">Ч/Б и Цвет</p>
+          <h2 class="cards__title cards__title_one-line">Рисуйте в любом стиле</h2>
+          <p class="cards__text">Будь то карандашная каляка-маляка или цветное произведение, приложение поможет в любой ситуации.</p>
+        </article>
+      </div>
+      <div class="swiper-pagination cards__swipe"></div>
+    </section>
+    <section>
+      <h2 class="title title_padding_bottom">Чик-чирик и ваша каляка превращается в изумительное произведение искусства.</h2>
+    </section>
+    <section class="gallery swiper">
+      <ul class="swiper-wrapper gallery__photos">
+        <li class="gallery__item swiper-slide"><img src="./images/image.png" class="gallery__photo" alt="Телефон с калякой"></li>
+        <li class="gallery__item swiper-slide"><img src="./images/face.png" class="gallery__photo" alt="Телефон с рожицей"></li>
+        <li class="gallery__item swiper-slide"><img src="./images/head.png" class="gallery__photo" alt="Телефон с лицом"></li>
+      </ul>
+      <div class="swiper-pagination cards__swipe gallery__swipe"></div>
+    </section>
+    <section class="cards swiper">
+      <div class="swiper-wrapper">
+        <article class="cards__item swiper-slide">
+          <p class="cards__subtitle">Быстро</p>
+          <h2 class="cards__title">Проблем с рисованием — нет</h2>
+          <p class="cards__text">Рисуйте в приложении доступными кистями: карандаш, маркер, линер, масляная кисть и многие другие...</p>
+        </article>
+        <article class="cards__item swiper-slide">
+          <p class="cards__subtitle">Просто</p>
+          <h2 class="cards__title cards__title_many-lines">Нарисовали, преобразовали, сохранили</h2>
+          <p class="cards__text">Раз, два, три, больше нечего тут рассказать.</p>
+        </article>
+      </div>
+      <div class="swiper-pagination cards__swipe"></div>
+    </section>
+    <section>
+      <h2 class="title">Качайте приложение и улучшайте свои художества, а потом хвастайтесь ими!</h2>
+    </section>
+    <section class="form">
+      <h2 class="form__title">Хотите нам что-то посоветовать?</h2>
+      <p class="form__subtitle">Оставьте заявку и мы свяжемся с вами.</p>
+      <form class="form__wrapper" name="form-info">
+        <fieldset class="form__container">
+          <input type="text" class="form__input" placeholder="Ваше Имя" required>
+          <input type="email" class="form__input" placeholder="Контактный Email" required>
+          <textarea class="form__input form__input_type_textarea" placeholder="Сообщение" required></textarea>
+        </fieldset>
+        <button type="submit" class="form__button">Оставить заявку</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer page__footer">
+    <div class="footer__container">
+      <h2 class="footer__title">Хотите скачать приложение?</h2>
+      <p class="footer__text">Качайте в ЭпСтор и ГуглПлэй.</p>
+      <a href="#" class="footer__button js-disabled">Уже скоро!</a>
+    </div>
+    <div class="footer__image"></div>
+  </footer>
+  <script src="./scripts/swiper-bundle.min.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 </html>
